@@ -1,4 +1,4 @@
-package controller;
+package org.example.controller;
 
 import io.restassured.RestAssured;
 import io.restassured.filter.log.RequestLoggingFilter;
@@ -23,7 +23,7 @@ public class ApiControllers {
     public Response getResponseFromActivityURL() {
         RestAssured.filters(new RequestLoggingFilter(), new ResponseLoggingFilter());
         log.debug("ApiController: GET requested");
-        return given().contentType(ContentType.JSON).when().get(routes.getActivityURL());
+        return given().when().get(routes.getActivityURL());
     }
 
 }

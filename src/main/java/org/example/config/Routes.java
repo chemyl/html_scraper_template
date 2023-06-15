@@ -1,4 +1,4 @@
-package config;
+package org.example.config;
 
 import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +18,6 @@ public class Routes {
 
     public String getActivityURL() {
         log.debug("Routes: url created");
-        return environment.getProperty("url.base") + "dimensions+kit";
+        return environment.getProperty("url.base") + environment.getProperty("key.word");
     }
 }

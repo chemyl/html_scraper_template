@@ -1,10 +1,15 @@
-package utils;
+package org.example.utils;
 
-import org.jsoup.nodes.Document;
+import org.example.dataModel.FetchedDataModel;
+
+import java.util.List;
 
 public interface DataStorage {
 
-    Boolean createXLSFilesByDocument(Document document);
+    void switchForCreationUpdatingXlsFile(List<FetchedDataModel> products);
 
-    Boolean updateXLSFileByDocument(Document document);
+    void createXLSFilesByDocument(List<FetchedDataModel> products);
+
+    void updatingXLSFilesByDocument(List<FetchedDataModel> products);
+
 }
