@@ -16,9 +16,9 @@
 * Development language java 11.
 
 #### WorkFlow:
-Take html data by url GET request
-Create Jsoup Document Object from html response
-Convert Document to Pojo
-Store Data to new XLS file
-Set Key words and target URL to application.properties
-Start Spring Application
+* Take html data by url GET request
+* Create Jsoup Document Object from html response
+* Convert Document to Pojo
+* Store Data to new XLS file
+* Set Key words and target URL to application.properties
+* Start Spring Application
